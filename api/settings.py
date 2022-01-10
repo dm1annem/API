@@ -2,7 +2,7 @@ from pathlib import Path
 
 import qwerty
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project like this: BASE_DIR / 'subdir'. 111111111
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
