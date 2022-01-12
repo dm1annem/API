@@ -1,12 +1,12 @@
 from pathlib import Path
 
-import qwerty
+# import qwerty
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'. 111111111
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = qwerty.secret_key
+SECRET_KEY = '1' #qwerty.secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
