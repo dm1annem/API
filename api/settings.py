@@ -27,8 +27,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     'apps.reviews.apps.ReviewsConfig',
-    'apps.my_auth.apps.MyAuthConfig',
-    'drf_yasg'
+
     
 
 ]
