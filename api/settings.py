@@ -126,13 +126,13 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALGORITHM = 'HS256'
-ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
+# ALGORITHM = 'HS256'
+# ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_AUTHENTICATION_CLASSES': 'src.auth.services.auth_backend.AuthBackend',
+    # 'DEFAULT_AUTHENTICATION_CLASSES': 'src.auth.services.auth_backend.AuthBackend',
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
         'rest_framework_simplejwt.authentication.JWTAuthentication'
