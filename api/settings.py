@@ -28,6 +28,8 @@ INSTALLED_APPS = [
 
     'apps.reviews.apps.ReviewsConfig',
     'apps.my_auth.apps.MyAuthConfig',
+    'drf_yasg'
+    
 
 ]
 
@@ -123,6 +125,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ALGORITHM = 'HS256'
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
