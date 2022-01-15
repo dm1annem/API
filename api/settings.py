@@ -6,7 +6,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1' #qwerty.secret_key
+SECRET_KEY = '1'  # qwerty.secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -28,8 +28,6 @@ INSTALLED_APPS = [
 
     'apps.reviews.apps.ReviewsConfig',
     'apps.users.apps.UsersConfig'
-
-    
 
 ]
 
@@ -74,14 +72,10 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': BASE_DIR / 'gb___base__',
-        # 'USER': 'gb___base__',
-        # 'PASSWORD': 'JswAd-96t6aC',
-        # 'HOST': 'mysql93.1gb.ru',
-        # 'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': BASE_DIR / 'karkascentr',
+        'USER': 'root',
+        'PASSWORD': 'dadada333'
     }
 }
 
@@ -135,6 +129,8 @@ REST_FRAMEWORK = {
     # 'DEFAULT_AUTHENTICATION_CLASSES': 'src.auth.services.auth_backend.AuthBackend',
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
-        'rest_framework_simplejwt.authentication.JWTAuthentication'
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication'
     ],
 }
+
+AUTH_USER_MODEL = 'users.User'
